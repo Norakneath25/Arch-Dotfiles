@@ -12,17 +12,6 @@ prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-environment {
-    
-    QT_QPA_PLATFORM "wayland;xcb"
-   
-    QT_QPA_PLATFORMTHEME "qt6ct"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
-    SDL_VIDEODRIVER "wayland,x11,windows" // important to keep for some games. For example ones with Easy Anti Cheat
-    _JAVA_AWT_WM_NONREPARENTING "1"
-    QT_WAYLAND_FORCE_DPI "physical"
-    STEAM_FORCE_DESKTOPUI_SCALING "1"
-}
 
 cursor {
     xcursor-theme "breeze_cursors"
@@ -55,20 +44,21 @@ hotkey-overlay {
 
 
 
-/-environment {
+environment {
     MOZ_ENABLE_WAYLAND "1"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
     XDG_SESSION_DESKTOP "niri"
     MOZ_DBUS_REMOTE "1"
+    QT_QPA_PLATFORM "wayland;xcb"
     QT_QPA_PLATFORMTHEME "qt6ct"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     QT_AUTO_SCREEN_SCALE_FACTOR "1"
-    QT_CURSOR_THEME "Bibata-Modern-Classic"
-    QT_CURSOR_SIZE "48"
+    //QT_CURSOR_THEME "Bibata-Modern-Classic"
+    QT_CURSOR_SIZE "32"
     QT_WAYLAND_FORCE_DPI "physical"
     STEAM_FORCE_DESKTOPUI_SCALING "1"
-    XCURSOR_SIZE "48"
+    XCURSOR_SIZE "32"
     GDK_SCALE "1"
     GDK_BACKEND "wayland"
     CLUTTER_BACKEND "wayland"
@@ -76,10 +66,10 @@ hotkey-overlay {
     EGL_PLATFORM "wayland"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     _JAVA_AWT_WM_NONREPARENTING "1"
-    _GTK_THEME_VARIANT "dark"
-    QT_WAYLAND_DECORATION "Adwaita-dark"
+    //_GTK_THEME_VARIANT "dark"
+    //QT_WAYLAND_DECORATION "Adwaita-dark"
     //PATH "$HOME/.local/bin:$HOME/bin:/opt:$PATH"
     // not sure
-    HYPRCURSOR_THEME "Bibata-Modern-Classic"
-    HYPRCURSOR_SIZE "48"
+    //HYPRCURSOR_THEME "Bibata-Modern-Classic"
+    HYPRCURSOR_SIZE "28"
 }
