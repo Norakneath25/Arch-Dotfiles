@@ -21,6 +21,8 @@ window-rule {
 window-rule {
   match app-id=r#"^org\.telegram\.desktop$"# title="^Media viewer$"
   open-fullscreen false
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.5; }
   open-floating true
 }
 
