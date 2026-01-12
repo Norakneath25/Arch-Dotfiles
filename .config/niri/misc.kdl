@@ -51,7 +51,7 @@ environment {
 
     // Java Applications
     _JAVA_AWT_WM_NONREPARENTING "1"
-    JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+    JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
     //DISPLAY ":1" 
 
     // SDL Applications
