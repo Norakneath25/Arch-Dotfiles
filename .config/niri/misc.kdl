@@ -51,6 +51,8 @@ environment {
 
     // Java Applications
     _JAVA_AWT_WM_NONREPARENTING "1"
+    JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+    //DISPLAY ":1" 
 
     // SDL Applications
     SDL_VIDEODRIVER "wayland"
@@ -66,41 +68,4 @@ environment {
 
     //steam 
     STEAM_FORCE_DESKTOPUI_SCALING "1"
-}
-
-
-/-environment {
-   
-    XDG_SESSION_TYPE "wayland"
-    XDG_CURRENT_DESKTOP "niri"
-    XDG_SESSION_DESKTOP "niri"
-    MOZ_DBUS_REMOTE "1"
-    QT_QPA_PLATFORM "wayland;xcb"
-    QT_QPA_PLATFORMTHEME "qt6ct"
-    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-    QT_AUTO_SCREEN_SCALE_FACTOR "1"
-    //QT_CURSOR_THEME "Bibata-Modern-Classic"
-    QT_CURSOR_SIZE "32"
-    QT_WAYLAND_FORCE_DPI "physical"
-    STEAM_FORCE_DESKTOPUI_SCALING "1"
-    XCURSOR_SIZE "32"
-    GDK_SCALE "1"
-    GDK_BACKEND "wayland,x11"
-    CLUTTER_BACKEND "wayland"
-    SDL_VIDEODRIVER "wayland,x11,windows" // important to keep for some games. For example ones with Easy Anti Cheat
-    EGL_PLATFORM "wayland"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
-
-    // Java Applications
-    _JAVA_AWT_WM_NONREPARENTING "1"
-
-    // not sure
-    //HYPRCURSOR_THEME "Bibata-Modern-Classic"
-    HYPRCURSOR_SIZE "28"
-
-    // Performance
-    VDPAU_DRIVER "va_gl"
-    LIBVA_DRIVER_NAME "iHD"
-
-    JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 }
