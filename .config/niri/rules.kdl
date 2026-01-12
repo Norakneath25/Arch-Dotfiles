@@ -1,8 +1,10 @@
 // -------------------- Window rules --------------------
 
-// Set open-maximized to true for all windows.
+// Set open-maximized to true for specific application.
 window-rule {
+  match app-id="Apache NetBeans IDE 28"
   open-maximized true
+  default-column-width { proportion 1.0; }
 }
 
 layer-rule {
@@ -22,13 +24,11 @@ window-rule {
   open-floating true
 }
 
-window-rule {
-  draw-border-with-background false
-}
 
 window-rule {
   geometry-corner-radius 6
   clip-to-geometry true
+  draw-border-with-background false
 }
 
 window-rule {
@@ -45,7 +45,3 @@ window-rule {
 }
 
 
-debug {
-  // Allows notification actions and window activation from Noctalia.
-  honor-xdg-activation-with-invalid-serial
-}
