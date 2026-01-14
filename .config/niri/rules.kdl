@@ -3,9 +3,11 @@
 // Set open-maximized to true for specific application.
 window-rule {
   match app-id="Apache NetBeans IDE 28"
+  match app-id="code"
   open-maximized true
   default-column-width { proportion 1.0; }
 }
+
 
 layer-rule {
     place-within-backdrop true
@@ -13,8 +15,14 @@ layer-rule {
 
 window-rule {
   match app-id="thunar"
+  match app-id="java"
   default-column-width { proportion 0.5; }
   default-window-height { proportion 0.5; }
+  open-floating true
+}
+
+window-rule {
+  match app-id="java"
   open-floating true
 }
 
