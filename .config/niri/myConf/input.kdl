@@ -12,7 +12,19 @@ input {
     }
     touchpad {
         tap
+        // dwt
+        // dwtp
         natural-scroll
+        drag true
+        // drag-lock
+        // disabled-on-external-mouse
+        // left-handed
+        click-method "clickfinger"
+        scroll-method "two-finger"
+        accel-speed 0.20
+        accel-profile "adaptive"
+        tap-button-map "left-right-middle"
+        scroll-factor 1.0
     }
     mouse {  
     }

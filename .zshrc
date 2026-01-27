@@ -20,6 +20,7 @@ zinit light romkatv/powerlevel10k
 #path
 export PATH=$PATH:/home/xuanyu/.local/bin
 
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 # source
 source ~/.nvm/nvm.sh

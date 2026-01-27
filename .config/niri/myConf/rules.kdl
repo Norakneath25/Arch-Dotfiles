@@ -1,0 +1,62 @@
+// -------------------- Global Window Defaults --------------------
+window-rule {
+  geometry-corner-radius 6
+  clip-to-geometry true
+  draw-border-with-background false
+}
+
+// -------------------- Maximized Applications --------------------
+window-rule {
+  // Add specific app-ids here if needed, otherwise this applies globally
+  open-maximized true
+  default-column-width { proportion 1.0; }
+}
+
+// -------------------- Floating Windows --------------------
+// System utilities
+window-rule {
+  match app-id="com.network.manager"
+  match app-id="org.pulseaudio.pavucontrol"
+  match app-id="xdg-desktop-portal-gtk"
+  open-floating true
+  default-column-width { fixed 400; }  // Consider fixed sizes for consistency
+  default-window-height { fixed 600; }
+}
+
+// File managers
+window-rule {
+  match app-id="thunar"
+  match app-id="org.gnome.Nautilus"
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.5; }
+  open-floating true
+}
+
+// Media viewers
+window-rule {
+  match app-id=r#"^org\.telegram\.desktop$"# title="^Media viewer$"
+  open-fullscreen false
+  default-column-width { proportion 0.6; }  // Slightly larger for media
+  default-window-height { proportion 0.6; }
+  open-floating true
+}
+
+window-rule {
+  match app-id="firefox$" title="^Picture-in-Picture$"
+  open-floating true
+  default-column-width { fixed 480; }
+  default-window-height { fixed 270; }
+  // Consider adding positioning, e.g., bottom-right corner
+}
+
+// -------------------- Terminal --------------------
+window-rule {
+  match app-id=r#"^org\.wezfurlong\.wezterm$"#
+  open-maximized false
+  default-column-width { proportion 0.5; }
+}
+
+// -------------------- Layer Rules --------------------
+layer-rule {
+  place-within-backdrop true
+}

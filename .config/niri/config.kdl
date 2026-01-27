@@ -1,21 +1,20 @@
 
-include "animations.kdl"
+include "./myConf/animations.kdl"
 
-include "binds.kdl"
+include "./myConf/binds.kdl"
 
-include "input.kdl"
+include "./myConf/input.kdl"
 
-include "outputs.kdl"
+include "./myConf/outputs.kdl"
 
-include "layout.kdl"
+include "./myConf/layout.kdl"
 
-include "misc.kdl"
+include "./myConf/misc.kdl"
 
-include "gestures.kdl"
+include "./myConf/gestures.kdl"
 
-include "rules.kdl"
+include "./myConf/rules.kdl"
 
-
-
-
+// noctalia conf
+include "./noctalia.kdl"
 

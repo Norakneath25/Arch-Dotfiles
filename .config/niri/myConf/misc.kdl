@@ -12,7 +12,7 @@ prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 cursor {
-    xcursor-theme "breeze_cursors"
+    xcursor-theme "Sweet-cursors"
     xcursor-size 22
     hide-when-typing
 }
@@ -26,7 +26,6 @@ overview {
 
 hotkey-overlay {
     skip-at-startup
-    hide-not-bound
 }
 
 environment {
@@ -34,7 +33,7 @@ environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
-
+    
     // Wayland Platform Settings
     QT_QPA_PLATFORM "wayland;xcb"
     QT_QPA_PLATFORMTHEME "qt6ct"
