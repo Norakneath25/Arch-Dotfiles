@@ -29,6 +29,11 @@ hotkey-overlay {
 }
 
 environment {
+
+    //x11
+    DISPLAY ":0"
+
+
     //DISPLAY null
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     XDG_SESSION_TYPE "wayland"
@@ -50,7 +55,7 @@ environment {
 
     // Java Applications
     _JAVA_AWT_WM_NONREPARENTING "1"
-    JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+    // JDK_JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
     //DISPLAY ":1" 
 
     // SDL Applications
