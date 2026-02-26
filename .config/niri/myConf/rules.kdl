@@ -52,6 +52,7 @@ window-rule {
 // -------------------- Terminal --------------------
 window-rule {
   match app-id=r#"^org\.wezfurlong\.wezterm$"#
+  match app-id="Alacritty"
   open-maximized false
   default-column-width { proportion 0.5; }
 }
