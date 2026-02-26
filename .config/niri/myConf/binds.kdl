@@ -5,7 +5,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+E hotkey-overlay-title="Open file manager: Thunar" { spawn-sh "thunar"; }
+    Mod+E hotkey-overlay-title="Open file manager: nautilus" { spawn-sh "nautilus"; }
     Mod+W hotkey-overlay-title="Select Wallpapers: Wallpapers"{ spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; } 
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+space hotkey-overlay-title="Run an Application: App_launcher"{ spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
