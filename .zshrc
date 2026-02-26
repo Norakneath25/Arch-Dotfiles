@@ -20,11 +20,15 @@ zinit light romkatv/powerlevel10k
 #path
 export PATH=$PATH:/home/xuanyu/.local/bin
 
-export QT_QPA_PLATFORMTHEME=qt6ct
+export PATH="/home/cachyosbtw/.flutter/flutter/bin:$PATH"
+
 
 # source
-source ~/.nvm/nvm.sh
-source ~/.gemini
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Load NVM
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Load NVM bash completion
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-autosuggestions
@@ -74,5 +78,6 @@ alias fix-comp='rm -f ~/.zcompdump*; compinit'
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 # eval "$(oh-my-posh init zsh)"
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
+
+
+. "$HOME/.local/bin/env"
