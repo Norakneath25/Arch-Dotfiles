@@ -17,7 +17,7 @@ zinit light romkatv/powerlevel10k
 
 # PATH
 export PATH="/home/cachyosbtw/.flutter/flutter/bin:$PATH"
-export PATH="$PATH:/home/xuanyu/.local/bin"
+export PATH="$PATH:/home/cachyosbtw/.local/bin"
 
 # NVM lazy load
 export NVM_DIR="$HOME/.nvm"
